@@ -13,7 +13,7 @@ const TopBar = () => {
 
                 <div className={styles.menu}>
                     {Object.entries(routes).map(([key, url]) => (
-                        <Link to={url} key={key} className="menuLink">
+                        <Link to={url} key={key} className={styles.menuLink}>
                             {key}
                         </Link>
                     ))}
