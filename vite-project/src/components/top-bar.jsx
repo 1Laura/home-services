@@ -1,14 +1,22 @@
 import React from 'react';
-import {routes} from "../navigation/router.jsx";
-
-
+import { routes} from "../navigation/router.jsx";
+import {Link} from "react-router-dom";
+import styles from "./top-bar.module.scss";
+import logo from "../assets/logo.svg";
 const TopBar = () => {
     return (
-        <header>
-            <div className="top-bar">
-                <h2>Top Bar</h2>
+        <header className={styles.menu}>
+            <div className={styles.topBar}>
+                <Link to={routes.HOME}>
+                    <img src={logo} alt="logo" />
+                </Link>
 
-                <div className="menu">
+                <div className={styles.menu}>
+                    {Object.entries(routes).map(([key, url]) => (
+                        <Link to={url} key={key} className="menuLink">
+                            {key}
+                        </Link>
+                    ))}
                 </div>
             </div>
         </header>
