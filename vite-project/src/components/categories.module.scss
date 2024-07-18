@@ -1,0 +1,25 @@
+@import '../index.css';
+
+.categories {
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+}
+
+.categoryBg {
+  background-color: #E2DFE8;
+  padding: 10px;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+
+  img {
+    max-width: 80%;
+    //height: auto;
+  }
+
+  p {
+    margin: 0;
+  }
+}
