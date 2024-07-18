@@ -1,0 +1,16 @@
+@import '../index.css';
+header{
+  .title{
+    text-transform: capitalize;
+  }
+  .textPrimaryColor {
+    color: var(--primary-color);
+  }
+
+  .textGreyColor{
+    color: #B5B5B7;
+  }
+}
+.categories{
+  background-color: #F2F2F2;
+}

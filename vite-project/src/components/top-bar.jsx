@@ -1,14 +1,15 @@
 import React from 'react';
-import { routes} from "../navigation/router.jsx";
+import {routes} from "../navigation/router.jsx";
 import {Link} from "react-router-dom";
 import styles from "./top-bar.module.scss";
 import logo from "../assets/logo.svg";
+
 const TopBar = () => {
     return (
         <header className={styles.menu}>
             <div className={styles.topBar}>
                 <Link to={routes.HOME}>
-                    <img src={logo} alt="logo" />
+                    <img src={logo} alt="logo"/>
                 </Link>
 
                 <div className={styles.menu}>
@@ -17,6 +18,9 @@ const TopBar = () => {
                             {key}
                         </Link>
                     ))}
+                </div>
+                <div>
+                    <button>Login/Sign Up</button>
                 </div>
             </div>
         </header>
