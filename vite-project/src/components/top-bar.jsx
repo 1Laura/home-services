@@ -1,12 +1,22 @@
 import React from 'react';
+import {useState} from "react";
 import {routes} from "../navigation/router.jsx";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import styles from "./top-bar.module.scss";
 import logo from "../assets/logo.svg";
+import Button from "./button.jsx";
 
 const TopBar = () => {
+    const navigate = useNavigate();
+    const [login, setLogin] = useState(0);
+    const log = () => {
+        setLogin(login + 1);
+        console.log(setLogin)
+    }
+
+
     return (
-        <header className={styles.menu}>
+        <div className={styles.menu}>
             <div className={styles.topBar}>
                 <Link to={routes.HOME}>
                     <img src={logo} alt="logo"/>
@@ -20,11 +30,10 @@ const TopBar = () => {
                     ))}
                 </div>
                 <div>
-                    <button>Login/Sign Up</button>
+                    <Button onclick={log}>Login</Button>
                 </div>
             </div>
-        </header>
-
+        </div>
     )
 }
 export default TopBar;

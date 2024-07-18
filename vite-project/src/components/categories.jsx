@@ -33,8 +33,8 @@ export const Categories = () => (
 );
 
 
-Categories.propTypes = {
-    onClick: PropTypes.func.isRequired,
-    children: PropTypes.node.isRequired,
-};
+// Categories.propTypes = {
+//     onClick: PropTypes.func.isRequired,
+//     children: PropTypes.node.isRequired,
+// };
 export default Categories;
