@@ -1,16 +1,32 @@
 @import '../index.css';
-header{
-  .title{
+
+header {
+  .title {
     text-transform: capitalize;
   }
+
   .textPrimaryColor {
     color: var(--primary-color);
   }
 
-  .textGreyColor{
+  .textGreyColor {
     color: #B5B5B7;
   }
 }
-.categories{
+
+.categories {
   background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+}
+
+.categoryBg {
+  background-color: #E2DFE8;
+  padding: 10px;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  img{
+    width: 100%;
+  }
 }
