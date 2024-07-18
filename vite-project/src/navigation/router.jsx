@@ -15,20 +15,24 @@ export const routes = {
     REGISTER: '/register',
     NOT_FOUND: '/not-found',
     SERVICES: '/services',
-    CATEGORY_PAGE: {path: '/search/:category',
-    url:(categoryId) => `/search/${categoryId}`,},
+    CATEGORY_PAGE: {
+        path: '/search/:category',
+        url: (category) => `/search/${category}`,
+    },
 };
 
 const router = createBrowserRouter([
-    {path: routes.HOME, element: <Home/>, children:
+    {
+        path: routes.HOME, element: <Home/>, children:
             [
                 {path: routes.ABOUT, element: <About/>},
                 {path: routes.LOGIN, element: <Login/>},
-                {path:routes.REGISTER, element:<Register/>},
-                {path:routes.NOT_FOUND, element:<NotFound/>},
-                {path:routes.SERVICES, element:<Services/>},
-                {path:routes.CATEGORY_PAGE.path, element:<Search/>},
-            ]},
+                {path: routes.REGISTER, element: <Register/>},
+                {path: routes.NOT_FOUND, element: <NotFound/>},
+                {path: routes.SERVICES, element: <Services/>},
+                {path: routes.CATEGORY_PAGE.path, element: <Search/>},
+            ]
+    },
 ]);
 
 export const Routes = () => {
