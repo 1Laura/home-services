@@ -8,12 +8,10 @@ import Button from "./button.jsx";
 
 const TopBar = () => {
     const navigate = useNavigate();
-    const [login, setLogin] = useState(0);
-    const log = () => {
-        setLogin(login + 1);
-        console.log(setLogin)
-    }
 
+    const onClick = () => {
+        navigate("/login");
+    }
 
     return (
         <div className={styles.menu}>
@@ -30,7 +28,7 @@ const TopBar = () => {
                     ))}
                 </div>
                 <div>
-                    <Button onclick={log}>Login</Button>
+                    <Button onclick={onClick}>Login / Sign Up</Button>
                 </div>
             </div>
         </div>
