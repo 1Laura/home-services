@@ -1,0 +1,117 @@
+{
+  "categories": [
+    {
+      "name": "cleaning",
+      "icon": "FaBucket",
+      "color": "#b12fde"
+    },
+    {
+      "name": "repair",
+      "icon": "FaScrewdriverWrench",
+      "color": "#ecbb3a"
+    },
+    {
+      "name": "painting",
+      "icon": "FaBrush",
+      "color": "#e23e40"
+    },
+    {
+      "name": "shifting",
+      "icon": "FaTruck",
+      "color": "#059e96"
+    },
+    {
+      "name": "plumbing",
+      "icon": "PiPipeFill",
+      "color": "#ea9319"
+    },
+    {
+      "name": "electric",
+      "icon": "FaLightbulb",
+      "color": "#1f71c5"
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "title": "Cleaning",
+      "master": "Jenny Wilson",
+      "description": "We provide cleaning services for your home, office, and commercial buildings.",
+      "category": "cleaning",
+      "address": "1601 Willow Rd, Menlo Park, CA 94025",
+      "price": 100
+    },
+    {
+      "id": "2",
+      "title": "Repair",
+      "master": "Emma Potter",
+      "description": "We provide repair services for your home, office, and commercial buildings.",
+      "category": "repair",
+      "address": "500 S Buena Vista St, Burbank, CA 91521",
+      "price": 200
+    },
+    {
+      "id": "3",
+      "title": "Painting",
+      "master": "Ronaldo Epric",
+      "description": "We provide painting services for your home, office, and commercial buildings.",
+      "category": "painting",
+      "address": "4059 Mt Lee Dr, Los Angeles, CA 90068",
+      "price": 300
+    },
+    {
+      "id": "4",
+      "title": "Shifting",
+      "master": "Henny Wilson",
+      "description": "We provide shifting services for your home, office, and commercial buildings.",
+      "category": "shifting",
+      "address": "1 Infinite Loop, Cupertino, CA 95014",
+      "price": 400
+    },
+    {
+      "id": "5",
+      "title": "Plumbing",
+      "master": "Harry Will",
+      "description": "We provide plumbing services for your home, office, and commercial buildings.",
+      "category": "plumbing",
+      "address": "350 Fifth Avenue, New York, NY 10118",
+      "price": 500
+    },
+    {
+      "id": "6",
+      "title": "Electric",
+      "master": "John Robinson",
+      "description": "We provide electric services for your home, office, and commercial buildings.",
+      "category": "electric",
+      "address": "221B Baker Street, New York, NY 10001",
+      "price": 600
+    },
+    {
+      "id": "7",
+      "title": "Electric",
+      "master": "Robert Wilson",
+      "description": "We provide electric services for your home, office, and commercial buildings.",
+      "category": "electric",
+      "address": "1600 Pennsylvania Avenue NW, Washington, DC 20500",
+      "price": 600
+    }, {
+      "id": "8",
+      "title": "Electric",
+      "master": "Ken Watson",
+      "description": "We provide electric services for your home, office, and commercial buildings.",
+      "category": "electric",
+      "address": "742 Evergreen Terrace, Springfield, IL 62704",
+      "price": 600
+    }
+    , {
+      "id": "9",
+      "title": "Electric",
+      "master": "Den Potter",
+      "description": "We provide electric services for your home, office, and commercial buildings.",
+      "category": "electric",
+      "address": "1515 S Harwood St, Dallas, TX 75215",
+      "price": 600
+    }
+
+  ]
+}
